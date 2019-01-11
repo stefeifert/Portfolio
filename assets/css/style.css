@@ -1,0 +1,225 @@
+.header {
+    background-color: #4aaaa5;
+    padding: 21px;
+    width: 200px;
+    margin: 0;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 18pt;
+    font-weight: bold;
+    float: left;    
+}
+
+header{
+    background-color: white;
+    border-bottom: 2px solid #4AAAA5;
+}
+
+.hcontainer {
+    width: 960px;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url("../images/morocco.png");
+}
+
+.clearfix:after {
+    content: ".";    
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+section {
+    background: white;
+    width: 960px;
+    margin: 30px auto;
+    padding: 20px;
+    box-sizing: border-box;         
+}
+
+.subhead {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 0 0;
+    font-size: 15pt;
+    padding: 10px;
+}
+
+hr {
+    color: #cabebe;
+    margin: 10px 10px;
+}
+
+.picture {
+    float: left;
+    padding: 10px;
+    width: 100px;
+    height: 100px;    
+}
+
+#Contact {
+    border-left: 1px solid lightgray;    
+}
+
+#Portfolio {
+    border-left: 1px solid lightgray; 
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    padding: 13px;    
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #777777;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 8pt;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;    
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+p {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 10pt;
+    margin: 20px;
+    line-height: 1.5;       
+} 
+
+.footerBar {
+    color: #cccccc;
+    font-size: 12px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+ }
+ 
+ #footerGreenBar {
+    overflow: hidden;
+    background-color: #4AAAA5;
+    height: 6px;
+    margin-top: 40px;
+    position: fixed;
+    bottom: 50px;
+    z-index: 1
+ }
+ 
+ #footerGreyBar {
+    overflow: hidden;
+    background-color: #666666;
+    height: 50px;
+ }
+
+.copyright {
+    color: white;
+    text-align: center;
+    font-size: 7pt;  
+ }
+
+ form {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #666666;
+    margin-left: 10px;
+ }
+
+ .formInput {
+    width: 98%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+ }
+
+ .formMessage {
+    height: 175px;
+    margin-bottom: -5px;
+ }
+
+.submitButton {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13pt;
+    color: white;
+    background: #4AAAA5;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.boxtext {
+    color: white;
+}
+
+.HangmanBox  {
+    position: absolute;
+    Height: 400px;
+    width: 300px;
+    background-image: url(../images/Hangman.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    top: 95px;
+    right: 854px;
+ }
+ 
+ .HangmanLabel {
+    background-color: teal;
+    color: white;
+    position: absolute;
+    bottom: 237px;
+    right: 100px;
+    width: 200px;
+    text-align: center;
+ }
+ 
+.ScratchGameBox  {
+    position: absolute;
+    Height: 400px;
+    width: 300px;
+    background-image: url(../images/RPG.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    top: 95px;
+    right: 484px;
+ }
+ 
+ .ScratchLabel {
+    background-color: teal;
+    position: absolute;
+    bottom: 237px;
+    right: 100px;
+    width: 200px;
+    text-align: center;
+ }
+
+ .TriviaBox  {
+    position: absolute;
+    Height: 400px;
+    width: 300px;
+    background-image: url(../images/Trivia.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    top: 95px;
+    right: 120px;
+ }
+ 
+ .TriviaLabel {
+    background-color: teal;
+    position: absolute;
+    bottom: 237px;
+    right: 100px;
+    width: 200px;
+    text-align: center;
+ }
