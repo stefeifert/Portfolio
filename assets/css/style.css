@@ -21,6 +21,15 @@ header{
     margin: 0 auto;
 }
 
+.container {
+    width: 100%;
+    margin-left: 50px;
+}
+.row {
+    margin-top: 50px;
+    margin-left: 210px;
+}
+
 body {
     background-image: url("../images/morocco.png");
 }
@@ -34,7 +43,8 @@ body {
 
 section {
     background: white;
-    width: 960px;
+    max-width: 960px;
+    height: 100%;
     margin: 30px auto;
     padding: 20px;
     box-sizing: border-box;         
@@ -59,6 +69,10 @@ hr {
     padding: 10px;
     width: 100px;
     height: 100px;    
+}
+
+#footerGreenBar {
+    margin-top: 50px;
 }
 
 #Contact {
@@ -163,15 +177,17 @@ p {
     color: white;
 }
 
-.HangmanBox  {
-    position: absolute;
-    Height: 400px;
+.column {
+    float: left;
+    height: 400px;
     width: 300px;
-    background-image: url(../images/Hangman.jpg);
     background-repeat: no-repeat;
     background-size: 200px 200px;
-    top: 95px;
-    right: 854px;
+    position: relative;
+}
+
+.HangmanBox  {
+    background-image: url(../images/Hangman.jpg);
  }
  
  .HangmanLabel {
@@ -185,14 +201,7 @@ p {
  }
  
 .ScratchGameBox  {
-    position: absolute;
-    Height: 400px;
-    width: 300px;
     background-image: url(../images/RPG.jpg);
-    background-repeat: no-repeat;
-    background-size: 200px 200px;
-    top: 95px;
-    right: 484px;
  }
  
  .ScratchLabel {
@@ -205,14 +214,7 @@ p {
  }
 
  .TriviaBox  {
-    position: absolute;
-    Height: 400px;
-    width: 300px;
     background-image: url(../images/Trivia.jpg);
-    background-repeat: no-repeat;
-    background-size: 200px 200px;
-    top: 95px;
-    right: 120px;
  }
  
  .TriviaLabel {
@@ -223,3 +225,108 @@ p {
     width: 200px;
     text-align: center;
  }
+
+ @media screen and (max-width: 980px) {
+    .topnav {
+        height: 18px;
+        margin-right: 300px;
+        padding: 10px;
+        border: none;
+        overflow: hidden;
+    }
+    #Contact, #Portfolio, #About {
+        width: 80px;
+        height: 38px;
+        padding-top: 15px;
+        padding-bottom: 0;
+    }
+    #Contact, #Portfolio {
+        border-left: none;
+    }    
+    section {
+        width: 860px;
+    }
+    .row {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 70px;
+        margin-bottom: 20px;
+    }
+    .hcontainer {
+        height: 66px;
+        width: 100%
+    }
+    .container {
+        margin: 0 auto;       
+    }       
+ }
+
+@media screen and (max-width: 768px) {   
+    section {
+        width: 648px;
+        margin-bottom: 50px;
+    }
+    .hcontainer {
+        width: 100%;
+    }
+    .row {
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .TriviaBox {
+        margin-top: -124px;
+    }   
+} 
+
+@media screen and (max-width: 640px) {
+    section {
+        width: 90%;
+        height: 100%;
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    } 
+    .header {
+        width: 100%;
+        text-align: center;
+    }
+    .topnav {
+        float: none;        
+        height: 55%;
+        width: 104%;    
+    }
+    .picture {
+        width: 95%;
+        height: 95%;
+    }
+    .form {
+        width: 95%;
+        height: 85%;
+        border-left-width: 10px;
+    }      
+    .row {
+        margin-top: 100px;
+    }
+    .HangmanBox {
+        background-position-x: 220px;    
+    }
+    .HangmanLabel {
+        margin-left: 100px;
+        right: -120px;
+    }
+    .ScratchBox {
+        margin-top: 500px;
+    }
+    /* .ScratchboxLabel {
+        margin-top: 500px;
+        margin-left: 200px;
+        right: -100px;
+    }          */
+    .TriviaBox {
+        margin-left: 120px;
+        right: -100px;   
+    }
+    .TriviaLabel {
+        margin-left: 120px;
+    }
+}
