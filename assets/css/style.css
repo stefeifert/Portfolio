@@ -8,14 +8,28 @@
     color: white;
     font-size: 18pt;
     font-weight: bold;
-    float: left;    
+    float: left;  
+    position: relative;
+    left: 59px;
 }
 
 header{
     background-color: white;
     border-bottom: 2px solid #4AAAA5;
+    /* width: 100%; */
 }
-
+img {
+    width: 40%;
+    height: 50%;
+}
+.subhead {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 0 0;
+    font-size: 15pt;
+    padding: 10px;
+}
 .hcontainer {
     width: 960px;
     margin: 0 auto;
@@ -26,8 +40,10 @@ header{
     margin-left: 50px;
 }
 .row {
-    margin-top: 50px;
-    margin-left: 210px;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom: 20px;
 }
 
 body {
@@ -40,24 +56,22 @@ body {
     height: 0;
     clear: both;
 }
+main {
+    max-width: 960px;
+    margin: auto;
+
+}
 
 section {
     background: white;
-    max-width: 960px;
+    /* max-width: 960px; */
     height: 100%;
     margin: 30px auto;
     padding: 20px;
+    width: 75%;
     box-sizing: border-box;         
 }
 
-.subhead {
-    color: #4aaaa5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    margin: 0 0;
-    font-size: 15pt;
-    padding: 10px;
-}
 
 hr {
     color: #cabebe;
@@ -88,6 +102,18 @@ hr {
     background-color: white;
     padding: 13px;    
 }
+.column980 {
+    width: 40%
+}   
+.img980 {
+    width: 75%
+} 
+.label980 {
+    position: relative;
+    right: 20px;
+    width: 75%;  
+    padding: 10px 0px
+  }
 
 .topnav a {
     float: right;
@@ -179,8 +205,8 @@ p {
 
 .column {
     float: left;
-    height: 400px;
-    width: 300px;
+    /* height: 400px;
+    width: 300px; */
     background-repeat: no-repeat;
     background-size: 200px 200px;
     position: relative;
@@ -189,50 +215,25 @@ p {
 .HangmanBox  {
     background-image: url(../images/Hangman.jpg);
  }
- 
- .HangmanLabel {
+ .label {
     background-color: teal;
     color: white;
-    position: absolute;
-    bottom: 237px;
-    right: 100px;
-    width: 200px;
+    position: relative;
+    bottom: 90px;
     text-align: center;
  }
  
-.ScratchGameBox  {
-    background-image: url(../images/RPG.jpg);
- }
  
- .ScratchLabel {
-    background-color: teal;
-    position: absolute;
-    bottom: 237px;
-    right: 100px;
-    width: 200px;
-    text-align: center;
- }
-
- .TriviaBox  {
-    background-image: url(../images/Trivia.jpg);
- }
  
- .TriviaLabel {
-    background-color: teal;
-    position: absolute;
-    bottom: 237px;
-    right: 100px;
-    width: 200px;
-    text-align: center;
- }
 
  @media screen and (max-width: 980px) {
     .topnav {
         height: 18px;
-        margin-right: 300px;
+        /* margin-right: 300px; */
         padding: 10px;
         border: none;
         overflow: hidden;
+        /* width: 70%; */
     }
     #Contact, #Portfolio, #About {
         width: 80px;
@@ -258,7 +259,23 @@ p {
     }
     .container {
         margin: 0 auto;       
-    }       
+    }
+    #portfolioH2 {
+        position: relative;
+        left: 20px;
+    } 
+    .column980 {
+        width: 40%
+    }   
+    .img980 {
+        width: 75%
+    } 
+    .label980 {
+        position: relative;
+        right: 20px;
+        width: 75%;  
+        padding: 10px 0px
+      }
  }
 
 @media screen and (max-width: 768px) {   
@@ -280,21 +297,58 @@ p {
 
 @media screen and (max-width: 640px) {
     section {
-        width: 90%;
+        width: 75%;
         height: 100%;
         margin-top: 100px;
-        margin-left: 50px;
+        margin-left: 90px;
         margin-bottom: 50px;
-    } 
+    }
+    .hcontainer{
+        width: 100%;
+    }
     .header {
         width: 100%;
         text-align: center;
+        left: 0px
     }
     .topnav {
         float: none;        
         height: 55%;
-        width: 104%;    
+        /* width: 104%;     */
+        width: 75%
     }
+    .topnav a{
+        padding: 14px 39px 14px 16px;
+    }
+    #media640_top_nav {
+        width: 100%;
+        background: white;
+    }
+    .label {
+        background-color: teal;
+        color: white;
+        position: relative;
+        bottom: 90px;
+        left: 0.5px;
+        text-align: center;
+        width: 84%;
+    }
+    .img {
+        height: 100%;
+        width: 90%;
+    }
+    .column980 {
+        width: 100%
+    }
+    .subheadMain {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman'  , Times, serif;
+    font-weight: bold;
+    margin: 0 0;
+    font-size: 15pt;
+    padding: 10px;
+    color: white
+}
     .picture {
         width: 95%;
         height: 95%;
@@ -305,7 +359,7 @@ p {
         border-left-width: 10px;
     }      
     .row {
-        margin-top: 100px;
+        /* margin-top: 100px; */
     }
     .HangmanBox {
         background-position-x: 220px;    
@@ -316,6 +370,13 @@ p {
     }
     .ScratchBox {
         margin-top: 500px;
+    }
+    .gallery{
+        /* padding: 10px; */
+        position: relative;
+        /* left: 20px; */
+        /* border-top: #777777 1px solid; */
+        /* width: 690px; */
     }
     /* .ScratchboxLabel {
         margin-top: 500px;
@@ -329,4 +390,5 @@ p {
     .TriviaLabel {
         margin-left: 120px;
     }
+
 }
