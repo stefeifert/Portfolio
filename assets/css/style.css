@@ -112,7 +112,8 @@ hr {
     position: relative;
     right: 20px;
     width: 75%;  
-    padding: 10px 0px
+    padding: 10px 0px;
+    color: white;
   }
 
 .topnav a {
