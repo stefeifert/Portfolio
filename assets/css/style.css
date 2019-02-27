@@ -160,8 +160,15 @@ p {
 
 .copyright {
     color: white;
-    text-align: center;
-    font-size: 8pt;  
+    text-align: right;
+    font-size: 8pt;
+    font-family: Georgia, 'Times New Roman', Times, serif  
+ }
+ 
+ .button-li {
+     background-color: whitesmoke;
+     text-align: left;
+    
  }
 
  form {
