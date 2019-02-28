@@ -158,12 +158,18 @@ p {
     height: 50px;
  }
 
-.copyright {
+.linkedIn {
+    display: inline-flex;
+}
+
+ .myInfo {
     color: white;
     text-align: right;
-    font-size: 8pt;
+    font-size: 10pt;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-right: 48px;  
+    margin-right: 48px;
+    float: right;
+    position: relative;  
  }
  
  .button-li {
@@ -394,5 +400,6 @@ p {
     .TriviaLabel {
         margin-left: 120px;
     }
-
+    
 }
+ 
