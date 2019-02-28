@@ -222,9 +222,9 @@ p {
     position: relative;
 }
 
-.HangmanBox  {
+/* .HangmanBox  {
     background-image: url(../images/Hangman.jpg);
- }
+ } */
  .label {
     background-color: orange;
     color: white;
