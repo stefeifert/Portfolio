@@ -10,8 +10,8 @@
     font-weight: bold;
     float: left;  
     position: relative;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     /* left: 59px; */
 }
 
@@ -180,13 +180,14 @@ p {
      background-color: white; 
      text-align: left; 
      margin-left: 48px;
-     width: 100%;
-     
-    
+     width: 100%;        
+ }
+ #portfolioH2 {
+    margin-left: 10px;
  }
 
  form {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #666666;
     margin-left: 10px;
  }
@@ -205,7 +206,7 @@ p {
  }
 
 .submitButton {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 13pt;
     color: white;
     background: orange;
