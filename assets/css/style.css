@@ -111,6 +111,12 @@ hr {
     padding: 10px 0px;
     color: white;
   }
+a {
+    color: white;  
+}
+a:link {
+    text-decoration: none;
+}    
 
 .topnav a {
     float: right;
